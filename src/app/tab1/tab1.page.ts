@@ -2,9 +2,12 @@ import {Component, Injectable} from '@angular/core';
 import 'heartbeat-plugin';
 import {HeartbeatPluginWeb} from "heartbeat-plugin/src/web";
 import {registerPlugin} from "@capacitor/core";
-import {Plugins} from "@capacitor/core";
-const {HeartbeatPluginPlugin} = Plugins;
-//import {HeartbeatPlugin} from "heartbeat-plugin";
+import {HeartbeatPluginPlugin} from "heartbeat-plugin";
+//import {Plugins} from "@capacitor/core";
+//const {HeartbeatPluginPlugin} = Plugins;
+const HeartbeatPlugin = registerPlugin<HeartbeatPluginPlugin>('HeartbeatPlugin');
+export default HeartbeatPlugin;
+
 
 //erre dob errort
 //import {HeartbeatPlugin} from "../../../android/app/src/main/java/io/ionic/starter"
@@ -22,10 +25,13 @@ asd: any;
   }
 
   kiir() {
-   // HeartbeatPlugin.proba('asd')
-    //this.asd = HeartbeatPlugin.proba('asd').value;
-    HeartbeatPluginPlugin.proba({asdd: 'valami'});
-   // HeartbeatPlugin.echo({value: 'asd'})
+
+   HeartbeatPlugin.echo({value: 'asd'})
+
+  }
+
+  beir() {
+    HeartbeatPlugin.proba({test: 'valami'})
   }
 
 
