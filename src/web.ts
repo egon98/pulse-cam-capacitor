@@ -13,10 +13,12 @@ export class HeartbeatPluginWeb extends WebPlugin implements HeartbeatPluginPlug
     return options2;
   }
 
-  async proba(options3: { asdd: string }): Promise<{ asdd: string }> {
-    console.log('ECHO', options3);
+  async proba(options3: { test: string }): Promise<{ test: string }> {
+    console.log('Proba', options3);
     return options3;
   }
+
+
 
 
 

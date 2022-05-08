@@ -55,14 +55,14 @@ echo2(options2: { asd: string; }) => Promise<{ asd: string; }>
 ### proba(...)
 
 ```typescript
-proba(options3: { asdd: string; }) => Promise<{ asdd: string; }>
+proba(options3: { test: string; }) => Promise<{ test: string; }>
 ```
 
 | Param          | Type                           |
 | -------------- | ------------------------------ |
-| **`options3`** | <code>{ asdd: string; }</code> |
+| **`options3`** | <code>{ test: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ asdd: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ test: string; }&gt;</code>
 
 --------------------
 
